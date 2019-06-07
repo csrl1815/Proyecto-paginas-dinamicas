@@ -1,0 +1,162 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+
+/** Se hace el codigo del nav**/
+
+
+.social {
+   position: fixed;
+    left: 0px;
+    top: 200px;
+    z-index: 2000;
+    color: #000
+    
+
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #fff;
+    background:black;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.social ul li .inicio{
+    background: #d95232;
+}
+
+
+.social ul li .primera{
+    background: #3b5998;
+}
+
+
+.social ul li .segunda{
+    background: #666666;
+}
+
+
+.social ul li .tercera{
+    background: #00abf0;
+}
+
+
+
+.social ul li .cuarta{
+    background: #ae181f;
+
+}
+
+.social ul li .quinta{
+    background: #ae181f;
+
+}
+
+.social ul li .sexta{
+    background: #ae181f;
+  }
+
+
+.social ul li a:hover{
+    background: #000;
+    padding: 10px 30px;
+
+}
+
+/** se termina el codigo del nav**/
+
+/** Inicia el codigo parallax**/
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/4generacion1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/4generacion2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/4generacion3.jpg');
+  min-height:400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+
+/** Termina el codigo parallax**/
