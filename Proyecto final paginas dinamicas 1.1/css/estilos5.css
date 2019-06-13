@@ -1,0 +1,103 @@
+/** Se hace el codigo del nav**/
+
+*{
+  margin: 0px;
+}
+
+.contenedor{
+  width: 95%;
+  max-height: 1000px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.contenedor p {
+  margin-bottom: 40px;
+}
+
+
+header {
+  background: #a4a4a4;
+}
+
+header nav{
+  background: #a4a4a4;
+  margin-bottom: 10px;
+
+}
+
+.centrado{
+
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+  display: block;
+  margin:0 auto;
+}
+
+header nav ul li {
+  display:inline-block;
+
+}
+
+header nav ul li a {
+  display:block;
+  padding: 20px;
+  color: #fff;
+  text-decoration:none;
+}
+
+header nav ul li a hover{
+  background: #1c8218;
+}
+ /* clase fix */
+
+ .menu-fixed{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 3px rgba( 0,0,0,.5);
+ }
+
+
+/** se termina el codigo del nav**/
+
+body{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+
+h1{
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+p{
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  color: red;
+}
+
+img{
+  width: 500px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.link{
+    color: #2E86C1;
+}
+
+.formulario{
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
