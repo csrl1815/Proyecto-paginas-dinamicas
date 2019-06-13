@@ -1,0 +1,160 @@
+/** Se hace el codigo del nav**/
+
+*{
+  margin: 0px;
+}
+
+.contenedor{
+  width: 95%;
+  max-height: 1000px;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.contenedor p {
+  margin-bottom: 40px;
+}
+
+
+header {
+  background: #a4a4a4;
+}
+
+header nav{
+  background: #a4a4a4;
+  margin-bottom: 10px;
+
+}
+
+.centrado{
+
+}
+
+header nav ul {
+  list-style: none;
+  overflow: hidden;
+  display: block;
+  margin:0 auto;
+}
+
+header nav ul li {
+  display:inline-block;
+
+}
+
+header nav ul li a {
+  display:block;
+  padding: 20px;
+  color: #fff;
+  text-decoration:none;
+}
+
+header nav ul li a hover{
+  background: #1c8218;
+}
+ /* clase fix */
+
+ .menu-fixed{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 3px rgba( 0,0,0,.5);
+ }
+
+
+/** se termina el codigo del nav**/
+
+/** Inicia el codigo parallax**/
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/generacion1.jpg');
+  min-height:100%;
+}
+
+.pimg2{
+  background-image:url('../img/4generacion2.jpg');
+  min-height:400px;
+}
+
+.pimg3{
+  background-image:url('../img/4generacion3.jpg');
+  min-height:400px;
+}
+
+.pimg4{
+  background-image:url('../img/mac2.jpg');
+  min-height:400px;
+}
+
+
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-shadow{
+  background-color:#282e34;
+  color:#ddd;
+  
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+
+/** Termina el codigo parallax**/
